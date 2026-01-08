@@ -17,9 +17,6 @@ export default function Hero({ onSubmitSuccess }) {
 
                     {/* LEFT CONTENT */}
                     <div className="text-white space-y-6">
-                        <span className="inline-block bg-green-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                            Islamabad Only – CDA Approved Design Support
-                        </span>
 
                         <h1 className="text-4xl lg:text-2xl font-bold leading-tight">
                             Design your 5 Marla home<br />
@@ -28,7 +25,7 @@ export default function Hero({ onSubmitSuccess }) {
 
 
                         <p className="text-lg text-gray-200">
-                            CDA-approved luxury house design package for Islamabad <br />
+                        luxury house design package for Islamabad & Rawalpindi <br />
                             Ground + First Floor + Mumty — everything in one place
                         </p>
 

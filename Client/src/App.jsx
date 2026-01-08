@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ThankYou from "./components/ThankYou";
 
-
 export default function App() {
-const [submitted, setSubmitted] = useState(false);
-
-
-return submitted ? (
-<ThankYou />
-) : (
-<div className="min-h-screen bg-black text-white">
-<Navbar />
-<Hero onSubmitSuccess={() => setSubmitted(true)} />
-</div>
-);
+  return (
+    <BrowserRouter>
+      <div className="min-h-screen bg-black text-white">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/thank-you" element={<ThankYou />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
