@@ -7,31 +7,46 @@ export default function ContactModal({ isOpen, onClose }) {
       <div
         className="absolute inset-0 bg-black/70"
         onClick={onClose}
-      ></div>
+      />
 
       {/* Modal Box */}
-      <div className="relative bg-black rounded-2xl shadow-xl w-[90%] max-w-md p-8 text-center">
+      <div className="relative bg-black rounded-2xl shadow-xl w-[90%] max-w-md p-8 text-center text-white">
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-white text-xl"
+          className="absolute top-4 right-4 text-gray-400 hover:text-white text-xl"
         >
           ✕
         </button>
 
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
 
-        <p className="text-white mb-6">
+        <p className="mb-6">
           Feel free to contact us anytime
         </p>
 
         <div className="space-y-4 text-lg">
+          {/* Phone */}
           <p>
-            📞 <span className="font-semibold">+92 308 8528128</span>
+            📞{" "}
+            <a
+              href="tel:+923088528128"
+              className="font-semibold hover:text-green-400"
+            >
+              +92 308 8528128
+            </a>
           </p>
+
+          {/* Email */}
           <p>
-            ✉️ <span className="font-semibold">geoconenterprises@outlook.com</span>
+            ✉️{" "}
+            <a
+              href="mailto:geoconenterprises@outlook.com"
+              className="font-semibold hover:text-blue-400"
+            >
+              geoconenterprises@outlook.com
+            </a>
           </p>
         </div>
       </div>
