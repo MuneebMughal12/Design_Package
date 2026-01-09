@@ -31,7 +31,7 @@ export default function ContactModal({ isOpen, onClose }) {
             📞 <span className="font-semibold">+92 308 8528128</span>
           </p>
           <p>
-            ✉️ <span className="font-semibold">info@magenbay.com</span>
+            ✉️ <span className="font-semibold">geoconenterprises@outlook.com</span>
           </p>
         </div>
       </div>
