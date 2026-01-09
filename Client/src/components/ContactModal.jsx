@@ -28,7 +28,7 @@ export default function ContactModal({ isOpen, onClose }) {
 
         <div className="space-y-4 text-lg">
           <p>
-            📞 <span className="font-semibold">+92 308</span>
+            📞 <span className="font-semibold">+92 308 8528128</span>
           </p>
           <p>
             ✉️ <span className="font-semibold">info@magenbay.com</span>

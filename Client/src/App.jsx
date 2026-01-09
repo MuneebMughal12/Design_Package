@@ -10,12 +10,12 @@ export default function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-black text-white relative">
         <Navbar />
+
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
 
-        {/* Floating WhatsApp Button */}
         <WhatsappButton />
       </div>
     </BrowserRouter>
