@@ -17,7 +17,7 @@ export default function Navbar() {
             <img
               src={logo}
               alt="GEO Logo"
-              className="w-28 sm:w-36 object-contain"
+              className="w-28 sm:w-52 object-contain"
             />
           </Link>
 
