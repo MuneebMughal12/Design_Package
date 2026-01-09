@@ -6,7 +6,6 @@ export default function ContactForm() {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
-    name: "",
     phone: "",
     location: "",
     size: "",
@@ -55,7 +54,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white/10 backdrop-blur-xl p-8 rounded-2xl shadow-xl w-full max-w-md">
+    <div className="bg-white/10  backdrop-blur-xl p-8 rounded-2xl shadow-xl w-full max-w-lg">
       <h3 className="text-2xl font-bold mb-4">Fill out the form</h3>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -110,6 +109,15 @@ export default function ContactForm() {
           Submit
         </button>
       </form>
+
+      
+      {/* TRUST */}
+      <div className="mt-6 text-sm text-gray-200 space-y-1">
+        <p>✔ Extensive experience working in Islamabad</p>
+        <p>✔ Full focus on quality and approval requirements</p>
+        <p>✔ Client satisfaction is our top priority</p>
+        <p>✔ Professional team with a transparent process</p>
+      </div>
     </div>
   );
 }
