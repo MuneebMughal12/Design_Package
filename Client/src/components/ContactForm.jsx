@@ -24,33 +24,33 @@ export default function ContactForm({ onSuccess }) {
   };
 
   // Handle form submission
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  try {
-    // Send to Google Sheet
-    await fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    try {
+      // Send to Google Sheet
+      await fetch("https://script.google.com/macros/s/AKfycbxBJohR7uNTgJTzh3WAlczhlNQHCEBkSkUo05MXv4fAJ-p1iiiWBCTV2eDj463ZwT6RSw/exec", {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(form),
+        // headers: { "Content-Type": "application/json" },
+      });
 
-    // Send email via EmailJS
-    await emailjs.send(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
-      form,
-      "YOUR_PUBLIC_KEY"
-    );
+      // Send email via EmailJS
+      await emailjs.send(
+        "service_y8dc6ha",
+        "template_p1eud7m",
+        form,
+        "rp6sPpZH8RQs4kO4i"
+      );
 
-    // Redirect to Thank You page
-    window.location.href = "/thank-you"; // <-- replace with your page URL
-  } catch (error) {
-    console.error("Error submitting form:", error);
-    alert("Something went wrong. Please try again.");
-  }
-};
+      // Redirect to Thank You page
+      window.location.href = "/thank-you"; // <-- replace with your page URL
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Something went wrong. Please try again.");
+    }
+  };
 
 
   return (
