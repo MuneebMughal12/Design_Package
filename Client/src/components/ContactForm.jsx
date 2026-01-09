@@ -6,6 +6,7 @@ export default function ContactForm() {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
+    name: "",
     phone: "",
     location: "",
     size: "",
@@ -105,14 +106,15 @@ export default function ContactForm() {
           <option>6+ months</option>
         </select>
 
-        <button className="w-full bg-green-600 py-3 rounded font-semibold">
+        <button className="w-full bg-green-600 py-3 rounded font-semibold active:scale-95 transition">
+
           Submit
         </button>
       </form>
 
       
       {/* TRUST */}
-      <div className="mt-6 text-sm text-gray-200 space-y-1">
+      <div className="mt-6  text-sm text-gray-200 space-y-1">
         <p>✔ Extensive experience working in Islamabad</p>
         <p>✔ Full focus on quality and approval requirements</p>
         <p>✔ Client satisfaction is our top priority</p>

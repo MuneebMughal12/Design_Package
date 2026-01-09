@@ -2,8 +2,7 @@ import ContactForm from "./ContactForm";
 
 export default function Hero({ onSubmitSuccess }) {
     return (
-        <section
-            className="relative min-h-screen bg-cover bg-center flex items-center"
+        <section className="relative md:min-h-screen bg-cover bg-center flex md:items-center"
             style={{
                 backgroundImage:
                     "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')",
@@ -12,20 +11,21 @@ export default function Hero({ onSubmitSuccess }) {
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/60"></div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative md:top-10 z-10 max-w-7xl mx-auto px-4 w-full pt-24 md:pt-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12">
+
 
                     {/* LEFT CONTENT */}
                     <div className="text-white space-y-6">
 
-                        <h1 className="text-4xl lg:text-2xl font-bold leading-tight">
+                        <h1 className="md:text-4xl  text-2xl  lg:text-2xl font-bold leading-tight">
                             Design your 5 Marla home<br />
                             with professional architects <br />
                         </h1>
 
 
                         <p className="text-lg text-gray-200">
-                        luxury house design package for Islamabad & Rawalpindi <br />
+                            luxury house design package for Islamabad & Rawalpindi <br />
                             Ground + First Floor + Mumty — everything in one place
                         </p>
 
@@ -38,7 +38,8 @@ export default function Hero({ onSubmitSuccess }) {
                         </div>
 
                         {/* SERVICES */}
-                        <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 mt-6">
+                        <div className="bg-white/10 backdrop-blur-xl p-6 md:p-8 rounded-2xl shadow-xl w-full max-w-lg mb-24 md:mb-0">
+
                             <h3 className="text-xl font-semibold mb-3">
                                 What Do We Offer?
                             </h3>
